@@ -1,11 +1,19 @@
 package br.com.project.bet.poo.dtos;
 
+import java.util.Date;
+
 public class PessoaDto {
 
-	private int idPessoa;
 	private String nome;
 	private String email;
 	private String senha;
+	private String CPF;
+	private Date dataNascimento;
+	private String genero;
+	private String endereco;
+	private String telefone;
+	
+	
 
 	public PessoaDto(int idPessoa, String nome, String email, String senha) {
 		super();
@@ -47,7 +55,10 @@ public class PessoaDto {
 		this.senha = senha;
 	}
 	
-	public PessoaDto autenticarLogin(PessoaDto login) {
+	public PessoaDto autenticarLogin(String nomeUsuario, String senhaUsuario) {
+		
+		
+		pessoa = 
 		return login;
 		
 	}
